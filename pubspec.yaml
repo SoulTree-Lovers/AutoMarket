@@ -52,17 +52,59 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/AutoMarketLogo2.png
   #   - images/a_dot_ham.jpeg
 
+  fonts:
+    - family: NanumSquare
+      fonts:
+        - asset: assets/fonts/NanumSquare/NanumSquareL.otf
+          weight: 300
+        - asset: assets/fonts/NanumSquare/NanumSquareR.otf
+          weight: 400
+        - asset: assets/fonts/NanumSquare/NanumSquareB.otf  
+          weight: 700
+        - asset: assets/fonts/NanumSquare/NanumSquareEB.otf 
+          weight: 800 
+        # - asset: assets/fonts/NanumSquareOTF_acL.otf
+    - family: NanumSquareRound
+      fonts:
+        - asset: assets/fonts/NanumSquareRound/NanumSquareRoundOTFL.otf
+          weight: 300
+        - asset: assets/fonts/NanumSquareRound/NanumSquareRoundOTFR.otf
+          weight: 400
+        - asset: assets/fonts/NanumSquareRound/NanumSquareRoundOTFB.otf
+          weight: 700
+        - asset: assets/fonts/NanumSquareRound/NanumSquareRoundOTFEB.otf
+          weight: 800 
+    - family: NanumGothicEco
+      fonts:
+        - asset: assets/fonts/NanumGothicEco/NanumGothicEco.otf
+          weight: 400
+        - asset: assets/fonts/NanumGothicEco/NanumGothicEcoBold.otf
+          weight: 700
+        - asset: assets/fonts/NanumGothicEco/NanumGothicEcoExtraBold.otf
+          weight: 800
+    - family: Megrim
+      fonts:
+        - asset: assets/fonts/Megrim/Megrim-Regular.ttf
+    - family: Katuri
+      fonts:
+        - asset: assets/fonts/Katuri/Katuri.otf
+    - family: UhBeebaby
+      fonts:
+        - asset: assets/fonts/UhBeebaby/UhBee_baby.ttf
+          weight: 400
+        - asset: assets/fonts/UhBeebaby/UhBee_baby_Bold.ttf
+          weight: 800
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
