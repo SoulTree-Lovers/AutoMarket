@@ -33,9 +33,10 @@ class _InitialScreenState extends State<InitialScreen> {
             decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Color(0xFFfda085),
-                  Color(0xFFfcb69f),
-                  Color(0xFFf6d365),
+                  // Color(0xFF2BAE66), // 초록색 계열
+                  // Color(0xFF2BAE66),
+                  Color(0xFFAAC8A7), // 초록색 계열 2
+                  Color(0xFFAAC8A7),
                 ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -47,10 +48,13 @@ class _InitialScreenState extends State<InitialScreen> {
                 children: const [
                   Image(
                     image: AssetImage(
-                      "assets/images/AutoMarketLogo2.png",
+                      "assets/images/계란후라이.png",
                     ),
                     height: 70,
                     width: 70,
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                   Text(
                     "오토마켙",
@@ -59,7 +63,8 @@ class _InitialScreenState extends State<InitialScreen> {
                       fontSize: 60,
                       fontFamily: "UhBeebaby",
                       fontWeight: FontWeight.w800,
-                      color: Colors.white,
+                      color: Color(0xFFFCF6F5),
+                      // color: Color.fromARGB(255, 0, 0, 0), // 검정 글씨
                     ),
                   ),
                   Text(
@@ -69,7 +74,8 @@ class _InitialScreenState extends State<InitialScreen> {
                       fontFamily: "UhBeebaby",
                       fontWeight: FontWeight.w800,
                       fontSize: 30,
-                      color: Colors.black38,
+                      color: Color(0xFFFCF6F5),
+                      // color: Color.fromARGB(255, 0, 0, 0), // 검정 글씨
                     ),
                   ),
                 ],

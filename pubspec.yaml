@@ -60,6 +60,13 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/images/된장찌개.png
+    - assets/images/김치찌개.png
+    - assets/images/제육볶음.png
+    - assets/images/닭볶음탕.png
+    - assets/images/당근.png
+    - assets/images/치즈.png
+    - assets/images/계란후라이.png
     - assets/images/AutoMarketLogo2.png
   #   - images/a_dot_ham.jpeg
 
@@ -105,6 +112,9 @@ flutter:
           weight: 400
         - asset: assets/fonts/UhBeebaby/UhBee_baby_Bold.ttf
           weight: 800
+    - family: KCC
+      fonts:
+        - asset: assets/fonts/KCC/KCC-Ganpan.ttf
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
