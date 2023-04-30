@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:automarket/screens/home_screen.dart';
+import 'package:automarket/screens/home_page.dart';
 import 'package:flutter/material.dart';
 
 class InitialScreen extends StatefulWidget {
@@ -16,7 +16,7 @@ class _InitialScreenState extends State<InitialScreen> {
     super.initState();
     Timer(const Duration(seconds: 3), () {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+          context, MaterialPageRoute(builder: (context) => const HomePage()));
     });
   }
 

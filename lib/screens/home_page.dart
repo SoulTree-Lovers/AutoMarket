@@ -48,6 +48,7 @@ class _HomePageState extends State<HomePage> {
               floating: true,
               centerTitle: true,
               expandedHeight: 100.0,
+              // pinned: true,
               forceElevated: innerBoxIsScrolled,
               automaticallyImplyLeading: false,
               backgroundColor: const Color(0xFFAAC8A7),
@@ -62,6 +63,99 @@ class _HomePageState extends State<HomePage> {
               //   // color: Color(0xFFFCF6F5),
               //   thickness: 2,
               // ),
+              Container(
+                height: screenHeight * 0.25,
+                width: screenWidth,
+                color: const Color.fromARGB(255, 255, 255, 255),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Text(
+                                "승민님이 좋아할만 한 음식 ",
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontSize: 15,
+                                  // fontFamily: "UhBeebaby",
+                                  fontFamily: "KCC",
+                                ),
+                              ),
+                            ),
+                            Image.asset(
+                              "assets/images/고기.png",
+                              width: 20,
+                              height: 20,
+                            ),
+                          ],
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: Text(
+                            "전체보기 >",
+                            style: TextStyle(
+                              fontSize: 10,
+                              color: Color.fromARGB(255, 145, 145, 145),
+                              fontFamily: "KCC",
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          FoodCard(
+                            screenWidth: screenWidth * 0.3,
+                            menuName: "통삼겹살",
+                            price: 13500,
+                            rating: 4.9,
+                            imagePath: "assets/images/통삼겹살.png",
+                          ),
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          FoodCard(
+                            screenWidth: screenWidth * 0.3,
+                            menuName: "닭갈비",
+                            price: 10050,
+                            rating: 4.8,
+                            imagePath: "assets/images/닭갈비.png",
+                          ),
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          FoodCard(
+                            screenWidth: screenWidth * 0.3,
+                            menuName: "김치찌개",
+                            price: 7400,
+                            rating: 5.0,
+                            imagePath: "assets/images/김치찌개.png",
+                          ),
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          FoodCard(
+                            screenWidth: screenWidth * 0.3,
+                            menuName: "된장찌개",
+                            price: 7300,
+                            rating: 4.5,
+                            imagePath: "assets/images/된장찌개.png",
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
               Container(
                 height: screenHeight * 0.25,
                 width: screenWidth,
@@ -98,6 +192,7 @@ class _HomePageState extends State<HomePage> {
                             "전체보기 >",
                             style: TextStyle(
                               fontSize: 10,
+                              color: Color.fromARGB(255, 145, 145, 145),
                               fontFamily: "KCC",
                             ),
                           ),
@@ -110,30 +205,30 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           FoodCard(
                             screenWidth: screenWidth * 0.3,
+                            menuName: "떡볶이",
+                            price: 7250,
+                            rating: 4.9,
+                            imagePath: "assets/images/떡볶이사진.png",
+                          ),
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          FoodCard(
+                            screenWidth: screenWidth * 0.3,
+                            menuName: "칠리새우",
+                            price: 12100,
+                            rating: 4.6,
+                            imagePath: "assets/images/칠리새우.png",
+                          ),
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          FoodCard(
+                            screenWidth: screenWidth * 0.3,
                             menuName: "닭볶음탕",
                             price: 10350,
                             rating: 4.9,
                             imagePath: "assets/images/닭볶음탕.png",
-                          ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          FoodCard(
-                            screenWidth: screenWidth * 0.3,
-                            menuName: "제육볶음",
-                            price: 6210,
-                            rating: 4.8,
-                            imagePath: "assets/images/제육볶음.png",
-                          ),
-                          const SizedBox(
-                            width: 5,
-                          ),
-                          FoodCard(
-                            screenWidth: screenWidth * 0.3,
-                            menuName: "김치찌개",
-                            price: 7400,
-                            rating: 5.0,
-                            imagePath: "assets/images/김치찌개.png",
                           ),
                           const SizedBox(
                             width: 5,
@@ -194,6 +289,7 @@ class _HomePageState extends State<HomePage> {
                             "전체보기 >",
                             style: TextStyle(
                               fontSize: 10,
+                              color: Color.fromARGB(255, 145, 145, 145),
                               fontFamily: "KCC",
                             ),
                           ),
