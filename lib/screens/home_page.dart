@@ -61,8 +61,8 @@ class _HomePageState extends State<HomePage> {
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: const [
-                      Text(
+                    children: [
+                      const Text(
                         '이번 달 아낀 돈',
                         style: TextStyle(
                           fontFamily: "UhBeebaby",
@@ -70,12 +70,25 @@ class _HomePageState extends State<HomePage> {
                           color: Color.fromARGB(255, 0, 0, 0),
                         ),
                       ),
-                      Text(
-                        "25,360 원",
-                        style: TextStyle(
-                          fontFamily: "KCC",
-                          fontSize: 25.0,
-                          color: Color.fromARGB(255, 58, 58, 58),
+                      SizedBox(
+                        width: 140,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Image.asset(
+                              "assets/images/money.png",
+                              height: 20,
+                              width: 20,
+                            ),
+                            const Text(
+                              "25,360 원",
+                              style: TextStyle(
+                                fontFamily: "KCC",
+                                fontSize: 25.0,
+                                color: Color.fromARGB(255, 58, 58, 58),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
@@ -359,20 +372,20 @@ class _HomePageState extends State<HomePage> {
                             ),
                             FoodCard(
                               screenWidth: screenWidth * 0.3,
-                              menuName: "김치찌개",
-                              price: 7400,
-                              rating: 5.0,
-                              imagePath: "assets/images/김치찌개.png",
+                              menuName: "된장찌개",
+                              price: 7300,
+                              rating: 4.5,
+                              imagePath: "assets/images/된장찌개.png",
                             ),
                             const SizedBox(
                               width: 5,
                             ),
                             FoodCard(
                               screenWidth: screenWidth * 0.3,
-                              menuName: "된장찌개",
-                              price: 7300,
-                              rating: 4.5,
-                              imagePath: "assets/images/된장찌개.png",
+                              menuName: "김치찌개",
+                              price: 7400,
+                              rating: 5.0,
+                              imagePath: "assets/images/김치찌개.png",
                             ),
                           ],
                         ),

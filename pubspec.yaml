@@ -61,6 +61,12 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/images/계란후라이.png
+    - assets/images/money.png
+    - assets/images/고기.png
+    - assets/images/떡볶이.png
+    - assets/images/비빔밥.png
+    
     # - assets/images/통삼겹살.png
     # - assets/images/닭갈비.png
     # - assets/images/칠리새우.png
