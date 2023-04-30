@@ -18,6 +18,18 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: const Color(0xFFAAC8A7),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.article_outlined),
+            tooltip: '주문내역',
+            onPressed: () => {},
+          ),
+          IconButton(
+            icon: const Icon(Icons.account_circle_outlined),
+            tooltip: '내 정보',
+            onPressed: () => {},
+          ),
+        ],
         title: SizedBox(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -30,7 +42,7 @@ class _HomePageState extends State<HomePage> {
               const Text(
                 "오토마켙",
                 style: TextStyle(
-                  fontSize: 45,
+                  fontSize: 35,
                 ),
               ),
               Image.asset(
