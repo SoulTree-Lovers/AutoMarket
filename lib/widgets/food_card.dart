@@ -41,20 +41,20 @@ class FoodCard extends StatelessWidget {
                 menuName, // 음식 이름
                 style: const TextStyle(
                   fontFamily: "KCC",
-                  fontSize: 20,
+                  fontSize: 15,
                   color: Color.fromARGB(255, 58, 58, 58),
                 ),
               ),
               const Icon(
                 Icons.star_rate_rounded,
-                size: 20,
+                size: 15,
                 color: Color.fromARGB(255, 235, 225, 137),
               ),
               Text(
                 "$rating", // 음식 이름
                 style: const TextStyle(
                   fontFamily: "KCC",
-                  fontSize: 20,
+                  fontSize: 15,
                   color: Color.fromARGB(255, 58, 58, 58),
                 ),
               ),
@@ -63,23 +63,28 @@ class FoodCard extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                "최저가",
-                style: TextStyle(
-                  fontFamily: "KCC",
-                  fontSize: 20,
-                  color: const Color.fromARGB(255, 58, 58, 58).withOpacity(0.5),
+              Container(
+                child: Text(
+                  "최저가",
+                  style: TextStyle(
+                    fontFamily: "KCC",
+                    fontSize: 15,
+                    color:
+                        const Color.fromARGB(255, 58, 58, 58).withOpacity(0.5),
+                  ),
                 ),
               ),
               const SizedBox(
                 width: 5,
               ),
-              Text(
-                "$price",
-                style: const TextStyle(
-                  fontFamily: "KCC",
-                  fontSize: 20,
-                  color: Color.fromARGB(255, 58, 58, 58),
+              Container(
+                child: Text(
+                  "$price",
+                  style: const TextStyle(
+                    fontFamily: "KCC",
+                    fontSize: 17,
+                    color: Color.fromARGB(255, 58, 58, 58),
+                  ),
                 ),
               ),
             ],
