@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:automarket/screens/my_page.dart';
-import 'package:automarket/widgets/defalut_button.dart';
+import 'package:automarket/widgets/default_button.dart';
 import 'package:automarket/widgets/food_card.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
