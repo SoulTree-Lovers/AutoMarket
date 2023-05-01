@@ -126,7 +126,7 @@ class _HomePageState extends State<HomePage> {
                 //   thickness: 2,
                 // ),
                 Container(
-                  height: screenHeight * 0.25,
+                  height: screenHeight * 0.28,
                   width: screenWidth,
                   color: const Color.fromARGB(255, 255, 255, 255),
                   child: Column(
@@ -219,7 +219,7 @@ class _HomePageState extends State<HomePage> {
                   height: 10,
                 ),
                 Container(
-                  height: screenHeight * 0.25,
+                  height: screenHeight * 0.28,
                   width: screenWidth,
                   color: const Color.fromARGB(255, 255, 255, 255),
                   child: Column(
@@ -316,7 +316,7 @@ class _HomePageState extends State<HomePage> {
                 //   thickness: 2,
                 // ),
                 Container(
-                  height: screenHeight * 0.25,
+                  height: screenHeight * 0.28,
                   width: screenWidth,
                   color: const Color.fromARGB(255, 255, 255, 255),
                   child: Column(
