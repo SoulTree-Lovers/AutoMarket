@@ -185,8 +185,47 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    height: 10,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        DefaultButton(
+                          text: "# 고기",
+                          buttonColor: const Color(0xFFAAC8A7),
+                          buttonWidth: 64,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        DefaultButton(
+                          text: "# 20대",
+                          buttonColor: const Color(0xFFAAC8A7),
+                          buttonWidth: 70,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        DefaultButton(
+                          text: "# 30대",
+                          buttonWidth: 70,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        DefaultButton(
+                          text: "# 40대",
+                          buttonWidth: 70,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        DefaultButton(
+                          text: "# 비올때",
+                          buttonWidth: 80,
+                        ),
+                      ],
+                    ),
                   ),
                   Container(
                     height: screenHeight * 0.28,

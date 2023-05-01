@@ -5,11 +5,13 @@ class DefaultButton extends StatelessWidget {
     super.key,
     required this.text,
     this.buttonColor = Colors.white,
+    this.buttonWidth = 128,
+    this.buttonHeight = 25,
   });
 
   final String text;
-  final double buttonWidth = 128;
-  final double buttonHeight = 25;
+  double buttonWidth = 128;
+  double buttonHeight = 25;
   Color buttonColor;
 
   @override
