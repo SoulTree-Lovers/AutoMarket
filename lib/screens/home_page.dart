@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:automarket/screens/my_page.dart';
+import 'package:automarket/widgets/defalut_button.dart';
 import 'package:automarket/widgets/food_card.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -162,58 +163,30 @@ class _HomePageState extends State<HomePage> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(45),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        DefaultButton(
+                          text: "# 아침 메뉴 추천",
                         ),
-                        width: screenWidth * 0.3,
-                        height: 25,
-                        child: const Text(
-                          "아침 메뉴 추천",
-                          style: TextStyle(fontFamily: "KCC", fontSize: 15),
-                          textAlign: TextAlign.center,
+                        const SizedBox(
+                          width: 10,
                         ),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(45),
+                        DefaultButton(text: "# 점심 메뉴 추천"),
+                        const SizedBox(
+                          width: 10,
                         ),
-                        width: screenWidth * 0.3,
-                        height: 25,
-                        child: const Text(
-                          "점심 메뉴 추천",
-                          style: TextStyle(fontFamily: "KCC", fontSize: 15),
-                          textAlign: TextAlign.center,
+                        DefaultButton(
+                          text: "# 저녁 메뉴 추천",
+                          buttonColor: const Color(0xFFAAC8A7), // 선택됨을 표시
                         ),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFAAC8A7),
-                          borderRadius: BorderRadius.circular(45),
-                        ),
-                        width: screenWidth * 0.3,
-                        height: 25,
-                        child: const Text(
-                          "저녁 메뉴 추천",
-                          style: TextStyle(fontFamily: "KCC", fontSize: 15),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   const SizedBox(
-                    height: 5,
+                    height: 10,
                   ),
                   Container(
                     height: screenHeight * 0.28,
@@ -504,41 +477,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-// class MyIndicatorShape extends ShapeBorder {
-//   @override
-//   EdgeInsetsGeometry get dimensions => EdgeInsets.zero;
-
-//   @override
-//   Path getInnerPath(Rect rect, {TextDirection? textDirection}) => Path();
-
-//   @override
-//   Path getOuterPath(Rect rect, {TextDirection? textDirection}) {
-//     final path = Path();
-//     const double radius = 20;
-//     path.moveTo(rect.left + radius, rect.top);
-//     path.lineTo(rect.right - radius, rect.top);
-//     path.arcToPoint(
-//       Offset(rect.right, rect.top + radius),
-//       radius: const Radius.circular(radius),
-//     );
-//     path.lineTo(rect.right, rect.bottom);
-//     path.lineTo(rect.left, rect.bottom);
-//     path.lineTo(rect.left, rect.top + radius);
-//     path.arcToPoint(
-//       Offset(rect.left + radius, rect.top),
-//       radius: const Radius.circular(radius),
-//       clockwise: false,
-//     );
-//     path.close();
-//     return path;
-//   }
-
-//   @override
-//   void paint(Canvas canvas, Rect rect, {TextDirection? textDirection}) {}
-
-//   @override
-//   ShapeBorder scale(double t) {
-//     return this;
-//   }
-// }
