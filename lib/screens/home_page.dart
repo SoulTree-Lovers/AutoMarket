@@ -164,7 +164,7 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(5.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -186,13 +186,20 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(5.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         DefaultButton(
                           text: "# 고기",
                           buttonColor: const Color(0xFFAAC8A7),
+                          buttonWidth: 64,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        DefaultButton(
+                          text: "# 채소",
                           buttonWidth: 64,
                         ),
                         const SizedBox(
@@ -217,15 +224,55 @@ class _HomePageState extends State<HomePage> {
                           text: "# 40대",
                           buttonWidth: 70,
                         ),
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        DefaultButton(
-                          text: "# 비올때",
-                          buttonWidth: 80,
-                        ),
                       ],
                     ),
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          DefaultButton(
+                            text: "# 비오는날",
+                            buttonWidth: 90,
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          DefaultButton(
+                            text: "# 맑은날",
+                            buttonWidth: 80,
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          DefaultButton(
+                            text: "# 매콤한",
+                            buttonWidth: 80,
+                            buttonColor: const Color(0xFFAAC8A7),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          DefaultButton(
+                            text: "# 달달한",
+                            buttonWidth: 80,
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          DefaultButton(
+                            text: "# 저렴한",
+                            buttonWidth: 80,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 5,
                   ),
                   Container(
                     height: screenHeight * 0.28,
