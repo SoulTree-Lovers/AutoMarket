@@ -31,14 +31,7 @@ class _RecipePageState extends State<RecipePage> {
         ),
         actions: [
           IconButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const CartPage(),
-                ),
-              );
-            },
+            onPressed: () {},
             icon: const Icon(Icons.my_library_books_rounded),
           ),
           IconButton(
@@ -256,9 +249,20 @@ class _RecipePageState extends State<RecipePage> {
                                     const SizedBox(
                                       height: 10,
                                     ),
-                                    DefaultButton(
-                                      text: "장바구니 담기",
-                                      buttonColor: Colors.white,
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const CartPage(),
+                                          ),
+                                        );
+                                      },
+                                      child: DefaultButton(
+                                        text: "장바구니 담기",
+                                        buttonColor: Colors.white,
+                                      ),
                                     ),
                                   ],
                                 ),
