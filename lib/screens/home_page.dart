@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:automarket/screens/cart_page.dart';
 import 'package:automarket/screens/my_page.dart';
 import 'package:automarket/widgets/default_button.dart';
 import 'package:automarket/widgets/food_card.dart';
@@ -434,12 +435,22 @@ class _HomePageState extends State<HomePage> {
                               const SizedBox(
                                 width: 5,
                               ),
-                              FoodCard(
-                                screenWidth: screenWidth * 0.3,
-                                menuName: "닭볶음탕",
-                                price: 10350,
-                                rating: 4.9,
-                                imagePath: "assets/images/닭볶음탕.png",
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const CartPage(),
+                                    ),
+                                  );
+                                },
+                                child: FoodCard(
+                                  screenWidth: screenWidth * 0.3,
+                                  menuName: "닭볶음탕",
+                                  price: 10350,
+                                  rating: 4.9,
+                                  imagePath: "assets/images/닭볶음탕.png",
+                                ),
                               ),
                               const SizedBox(
                                 width: 5,

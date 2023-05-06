@@ -7,16 +7,19 @@ class DefaultButton extends StatelessWidget {
     this.buttonColor = Colors.white,
     this.buttonWidth = 128,
     this.buttonHeight = 25,
+    this.textColor = Colors.black,
   });
 
   final String text;
   double buttonWidth = 128;
   double buttonHeight = 25;
   Color buttonColor;
+  Color textColor;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      alignment: Alignment.center,
       decoration: BoxDecoration(
         boxShadow: const [
           BoxShadow(
@@ -33,7 +36,11 @@ class DefaultButton extends StatelessWidget {
       height: buttonHeight,
       child: Text(
         text,
-        style: const TextStyle(fontFamily: "KCC", fontSize: 15),
+        style: TextStyle(
+          fontFamily: "KCC",
+          fontSize: 15,
+          color: textColor,
+        ),
         textAlign: TextAlign.center,
       ),
     );
