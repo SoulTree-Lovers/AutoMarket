@@ -1,3 +1,4 @@
+import 'package:automarket/screens/lowest_price_page.dart';
 import 'package:automarket/widgets/default_button.dart';
 import 'package:flutter/material.dart';
 
@@ -215,9 +216,19 @@ class _CartPageState extends State<CartPage> {
                           fontFamily: "KCC",
                         ),
                       ),
-                      DefaultButton(
-                        text: "자세히 보기",
-                        buttonColor: const Color.fromARGB(255, 182, 182, 182),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const LowestPricePage(),
+                            ),
+                          );
+                        },
+                        child: DefaultButton(
+                          text: "자세히 보기",
+                          buttonColor: const Color.fromARGB(255, 182, 182, 182),
+                        ),
                       ),
                     ],
                   ),
