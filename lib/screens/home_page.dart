@@ -1,7 +1,7 @@
 import 'dart:math';
 
-import 'package:automarket/screens/cart_page.dart';
 import 'package:automarket/screens/my_page.dart';
+import 'package:automarket/screens/recipe_page.dart';
 import 'package:automarket/widgets/default_button.dart';
 import 'package:automarket/widgets/food_card.dart';
 import 'package:flutter/material.dart';
@@ -440,7 +440,7 @@ class _HomePageState extends State<HomePage> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => const CartPage(),
+                                      builder: (context) => const RecipePage(),
                                     ),
                                   );
                                 },
