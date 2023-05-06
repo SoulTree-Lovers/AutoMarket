@@ -1,3 +1,4 @@
+import 'package:automarket/widgets/product_card.dart';
 import 'package:flutter/material.dart';
 
 class LowestPricePage extends StatefulWidget {
@@ -88,94 +89,88 @@ class _LowestPricePageState extends State<LowestPricePage> {
             const SizedBox(
               height: 10,
             ),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Colors.black12,
-                    spreadRadius: 1,
-                    blurRadius: 10,
-                  )
-                ],
-              ),
-              width: screenWidth * 0.95,
-              height: 100,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Container(
-                    width: 60,
-                    height: 60,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage("assets/images/coupangLogo.png"),
-                      ),
+                  const Text(
+                    "새로 구입해야 할 제품들",
+                    style: TextStyle(
+                      fontFamily: "NanumSquareRound",
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Row(
-                    children: [
-                      Container(
-                        width: 60,
-                        height: 60,
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage("assets/images/chicken.png"),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      SizedBox(
-                        width: 100,
-                        height: 80,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const Text(
-                              "하림 닭볶음탕용 냉장 절단육",
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            Row(
-                              children: const [
-                                Icon(
-                                  Icons.star_rate_rounded,
-                                  size: 15,
-                                  color: Color.fromARGB(255, 235, 225, 137),
-                                ),
-                                Text("4.6"),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Text(
-                        "4,800원",
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontFamily: "KCC",
-                        ),
-                      ),
-                    ],
-                  ),
                   Container(
-                    width: 30,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(30),
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black12,
+                          spreadRadius: 1,
+                        ),
+                      ],
+                    ),
+                    width: 80,
                     height: 30,
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage("assets/images/checkMark.png"),
-                      ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Text("추가"),
+                        Icon(
+                          Icons.add,
+                        ),
+                      ],
                     ),
                   ),
                 ],
               ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            ProductCard(
+              screenWidth: screenWidth,
+              logoPath: "assets/images/coupangLogo.png",
+              productPath: "assets/images/chicken.png",
+              productDescription: "하림 닭볶음탕용 냉장 절단육",
+              productRate: 4.6,
+              productPrice: "4,800원",
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            ProductCard(
+              screenWidth: screenWidth,
+              logoPath: "assets/images/MarketKurlyLogo.png",
+              productPath: "assets/images/carrot.png",
+              productDescription: "친환경 당근 500g",
+              productRate: 4.9,
+              productPrice: "2,800원",
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            ProductCard(
+              screenWidth: screenWidth,
+              logoPath: "assets/images/coupangLogo.png",
+              productPath: "assets/images/potato.png",
+              productDescription: "한끼 감자(햇) 350g 1봉",
+              productRate: 4.8,
+              productPrice: "3,200원",
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            ProductCard(
+              screenWidth: screenWidth,
+              logoPath: "assets/images/ssgLogo.png",
+              productPath: "assets/images/pepper.png",
+              productDescription: "청양 고추 60g 1봉",
+              productRate: 5.0,
+              productPrice: "1,200원",
             ),
           ],
         ),
