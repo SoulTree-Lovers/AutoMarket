@@ -98,7 +98,7 @@ class _CartPageState extends State<CartPage> {
                   ),
                 ],
               ),
-              height: screenHeight * 0.2,
+              height: screenHeight * 0.15,
               width: screenWidth * 0.9,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -171,6 +171,183 @@ class _CartPageState extends State<CartPage> {
             ),
             const SizedBox(
               height: 30,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: const Color(0xFFAAC8A7),
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.black12,
+                    offset: Offset(5, 5),
+                  ),
+                ],
+              ),
+              height: screenHeight * 0.15,
+              width: screenWidth * 0.9,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                      image: AssetImage(
+                        "assets/images/saveMoney.png",
+                      ),
+                    )),
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      const Text(
+                        "최저가 제안가",
+                        style: TextStyle(
+                          fontFamily: "NanumSquareRound",
+                          fontSize: 20,
+                        ),
+                      ),
+                      const Text(
+                        "총 12,000원",
+                        style: TextStyle(
+                          fontSize: 30,
+                          fontFamily: "KCC",
+                        ),
+                      ),
+                      DefaultButton(
+                        text: "자세히 보기",
+                        buttonColor: const Color.fromARGB(255, 182, 182, 182),
+                      ),
+                    ],
+                  ),
+                  DefaultButton(
+                    text: "담기",
+                    buttonWidth: 50,
+                    buttonHeight: 50,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: const Color(0xFFAAC8A7),
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.black12,
+                    offset: Offset(5, 5),
+                  ),
+                ],
+              ),
+              height: screenHeight * 0.15,
+              width: screenWidth * 0.9,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                      image: AssetImage(
+                        "assets/images/rate.png",
+                      ),
+                    )),
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      const Text(
+                        "높은 별점 위주 제안가",
+                        style: TextStyle(
+                          fontFamily: "NanumSquareRound",
+                          fontSize: 20,
+                        ),
+                      ),
+                      const Text(
+                        "총 15,900원",
+                        style: TextStyle(
+                          fontSize: 30,
+                          fontFamily: "KCC",
+                        ),
+                      ),
+                      DefaultButton(
+                        text: "자세히 보기",
+                        buttonColor: const Color.fromARGB(255, 182, 182, 182),
+                      ),
+                    ],
+                  ),
+                  DefaultButton(
+                    text: "담기",
+                    buttonWidth: 50,
+                    buttonHeight: 50,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: const Color(0xFFAAC8A7),
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.black12,
+                    offset: Offset(5, 5),
+                  ),
+                ],
+              ),
+              height: screenHeight * 0.15,
+              width: screenWidth * 0.9,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                      image: AssetImage(
+                        "assets/images/sales.png",
+                      ),
+                    )),
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      const Text(
+                        "구매량 위주 제안가",
+                        style: TextStyle(
+                          fontFamily: "NanumSquareRound",
+                          fontSize: 20,
+                        ),
+                      ),
+                      const Text(
+                        "총 14,300원",
+                        style: TextStyle(
+                          fontSize: 30,
+                          fontFamily: "KCC",
+                        ),
+                      ),
+                      DefaultButton(
+                        text: "자세히 보기",
+                        buttonColor: const Color.fromARGB(255, 182, 182, 182),
+                      ),
+                    ],
+                  ),
+                  DefaultButton(
+                    text: "담기",
+                    buttonWidth: 50,
+                    buttonHeight: 50,
+                  ),
+                ],
+              ),
             ),
           ],
         ),
