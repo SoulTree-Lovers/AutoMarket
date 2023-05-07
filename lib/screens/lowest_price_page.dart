@@ -95,7 +95,7 @@ class _LowestPricePageState extends State<LowestPricePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   const Text(
-                    "새로 구입해야 할 제품들",
+                    "승민님이 새로 구입해야 할 제품들",
                     style: TextStyle(
                       fontFamily: "NanumSquareRound",
                       fontSize: 20,
@@ -171,6 +171,41 @@ class _LowestPricePageState extends State<LowestPricePage> {
               productDescription: "청양 고추 60g 1봉",
               productRate: 5.0,
               productPrice: "1,200원",
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  alignment: Alignment.center,
+                  width: 140,
+                  height: 60,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(
+                      color: const Color(0xFFAAC8A7),
+                    ),
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Colors.black12,
+                        spreadRadius: 2,
+                        offset: Offset(1, 1),
+                        blurRadius: 5,
+                      ),
+                    ],
+                  ),
+                  child: const Text(
+                    "간편 결제",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontFamily: "NanumSquareRound",
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
